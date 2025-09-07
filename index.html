@@ -501,6 +501,21 @@
                 align-items: center;
             }
         }
+        
+        /* Image cropping and resizing */
+        .cropped-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: top;
+        }
+        
+        .resized-image {
+            width: 100%;
+            height: auto;
+            transform: scale(0.45);
+            transform-origin: top left;
+        }
     </style>
 </head>
 <body>
@@ -566,7 +581,7 @@
                         <div class="keyword-tab">Cultural Dimensions</div>
                     </div>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc1.png?raw=true" alt="Students in a diverse South African university classroom">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc1.png?raw=true" alt="Students in a diverse South African university classroom" class="cropped-image">
                         <div class="image-caption">Diverse South African university classroom</div>
                     </div>
                     <p>The relationship between sociocultural linguistics and academic literacy development in post-apartheid South Africa is fundamentally transformative, challenging traditional autonomous models of literacy whilst foregrounding the cultural, social, and political dimensions of language learning in higher education contexts.</p>
@@ -582,7 +597,7 @@
                         <div class="keyword-tab">Three-Model Framework</div>
                     </div>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc2.png?raw=true" alt="Diagram showing sociocultural linguistics theoretical framework">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc2.png?raw=true" alt="Diagram showing sociocultural linguistics theoretical framework" class="resized-image">
                         <div class="image-caption">Sociocultural linguistics theoretical framework</div>
                     </div>
                     <h3>Sociocultural Linguistics</h3>
@@ -591,7 +606,7 @@
                     <h3>Academic Literacy Development</h3>
                     <p>Academic literacy development, particularly through Lea and Street's influential three-model framework, has evolved from technical skills-based approaches towards more socially situated understandings. The academic literacies model specifically addresses meaning-making, identity, power and authority, foregrounding the institutional nature of what "counts" as knowledge in particular contexts.</p>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc3.png?raw=true" alt="Visual representation of Lea and Street's three-model framework">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc3.png?raw=true" alt="Visual representation of Lea and Street's three-model framework" class="resized-image">
                         <div class="image-caption">Lea and Street's three-model framework</div>
                     </div>
                 </div>
@@ -605,14 +620,14 @@
                         <div class="keyword-tab">English Hegemony</div>
                     </div>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc4.png?raw=true" alt="Map of South Africa showing linguistic diversity">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc4.png?raw=true" alt="Map of South Africa showing linguistic diversity" class="resized-image">
                         <div class="image-caption">Linguistic diversity in South Africa</div>
                     </div>
                     <p>In post-apartheid South Africa's multilingual society with twelve official languages, the relationship between sociocultural linguistics and academic literacy development is particularly complex. Despite constitutional provisions promoting multilingualism, English and Afrikaans remain dominant in higher education, whilst more than 76% of the population speaks African languages as their home languages.</p>
                     
                     <p>This linguistic landscape reflects what scholars term a "gridlock of collusion" between political elites and African-language speakers who seek the perceived benefits of English-medium education. The persistence of English hegemony demonstrates how language ideologies—socially constructed beliefs about language value and legitimacy—continue to shape educational practices.</p>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc5.png?raw=true" alt="Students navigating between home languages and academic English">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc5.png?raw=true" alt="Students navigating between home languages and academic English" class="resized-image">
                         <div class="image-caption">Students navigating between home languages and academic English</div>
                     </div>
                 </div>
@@ -626,14 +641,14 @@
                         <div class="keyword-tab">Epistemic Injustice</div>
                     </div>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc6.png?raw=true" alt="Contrast between autonomous and ideological models of literacy">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc6.png?raw=true" alt="Contrast between autonomous and ideological models of literacy" class="resized-image">
                         <div class="image-caption">Contrast between autonomous and ideological models of literacy</div>
                     </div>
                     <p>The sociocultural approach fundamentally opposes autonomous models of literacy that view reading and writing as neutral, decontextualised technical skills. Street's ideological model of literacy, central to New Literacy Studies, recognises that literacy practices are always embedded in power relations and cultural contexts.</p>
                     
                     <p>In South Africa, autonomous approaches manifest in discriminatory practices such as monolingual multiple-choice tests that prevent students from demonstrating disciplinary mastery whilst marginalising diverse knowledge production tools. These approaches perpetuate what researchers call "epistemic injustice" by privileging Global North epistemologies over African knowledge systems.</p>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc7.png?raw=true" alt="Students struggling with decontextualised academic tasks">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc7.png?raw=true" alt="Students struggling with decontextualised academic tasks" class="resized-image">
                         <div class="image-caption">Students struggling with decontextualised academic tasks</div>
                     </div>
                 </div>
@@ -647,7 +662,7 @@
                         <div class="keyword-tab">Social Practices</div>
                     </div>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc8.png?raw=true" alt="Students collaborating using multiple languages and cultural resources">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc8.png?raw=true" alt="Students collaborating using multiple languages and cultural resources" class="resized-image">
                         <div class="image-caption">Students collaborating using multiple languages and cultural resources</div>
                     </div>
                     <p>Recent scholarship has developed sociocultural theories for academic literacy research that incorporate students' cultural identities and multilingual resources. This approach recognises that South African students arrive at universities with diverse cultural capital and literacy practices from their communities, which should be valued rather than replaced.</p>
@@ -664,14 +679,14 @@
                         <div class="keyword-tab">African Epistemologies</div>
                     </div>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc1.png?raw=true" alt="Traditional African storytelling and knowledge transmission">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc1.png?raw=true" alt="Traditional African storytelling and knowledge transmission" class="cropped-image">
                         <div class="image-caption">Traditional African storytelling and knowledge transmission</div>
                     </div>
                     <p>A critical dimension of this relationship involves integrating Indigenous Knowledge Systems (IKS) into academic literacy development. Research demonstrates how indigenous pedagogies, such as Ma'at and Tewahedo traditions, provide collaborative learning frameworks that align with contemporary social practice theories of literacy.</p>
                     
                     <p>Studies of isiXhosa and isiZulu folktales and traditional songs reveal sophisticated literacy instruction embedded in indigenous practices, including dialogical interaction, integrated knowledge forms, and multiliteracy development. These findings challenge Western-centric assumptions about literacy development and demonstrate the wealth of African epistemological resources.</p>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc2.png?raw=true" alt="Traditional African educational practices and oral traditions">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc2.png?raw=true" alt="Traditional African educational practices and oral traditions" class="resized-image">
                         <div class="image-caption">Traditional African educational practices and oral traditions</div>
                     </div>
                 </div>
@@ -685,14 +700,14 @@
                         <div class="keyword-tab">Cultural Intelligence</div>
                     </div>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc3.png?raw=true" alt="Students successfully using multiple languages in academic contexts">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc3.png?raw=true" alt="Students successfully using multiple languages in academic contexts" class="resized-image">
                         <div class="image-caption">Students successfully using multiple languages in academic contexts</div>
                     </div>
                     <p>The integration of sociocultural linguistics with academic literacy development offers transformative possibilities for South African higher education. Translanguaging approaches that leverage students' full linguistic repertoires show promise for simultaneous African language development and academic success.</p>
                     
                     <p>The proposed Inclusive African Theory of Academic Literacy (ATAL) argues for moving beyond autonomous constructs towards approaches that value students' evolving identities and cultural intelligences. This framework integrates students' cultures and African epistemologies to inspire new assessment methods and enable demonstration of disciplinary mastery across multiple vocabularies.</p>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc4.png?raw=true" alt="Innovative assessment methods incorporating multiple ways of knowing">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc4.png?raw=true" alt="Innovative assessment methods incorporating multiple ways of knowing" class="resized-image">
                         <div class="image-caption">Innovative assessment methods incorporating multiple ways of knowing</div>
                     </div>
                 </div>
@@ -706,14 +721,14 @@
                         <div class="keyword-tab">Mother-tongue Education</div>
                     </div>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc5.png?raw=true" alt="University infrastructure supporting multilingual education">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc5.png?raw=true" alt="University infrastructure supporting multilingual education" class="resized-image">
                         <div class="image-caption">University infrastructure supporting multilingual education</div>
                     </div>
                     <p>Current challenges include institutional resistance to linguistic transformation, limited resources for African language development, and persistent ideological preferences for English-medium instruction. However, recent policy developments such as the BELA Act signal potential shifts towards mother-tongue-based bilingual education.</p>
                     
                     <p>The establishment of African language departments in 92% of South African universities, alongside language units in 58% of institutions, provides infrastructure for transformation. Critical research explores alternatives to "one-size-fits-all" solutions, emphasising curriculum responsiveness to diverse student needs.</p>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc6.png?raw=true" alt="Policy documents and institutional transformation initiatives">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc6.png?raw=true" alt="Policy documents and institutional transformation initiatives" class="resized-image">
                         <div class="image-caption">Policy documents and institutional transformation initiatives</div>
                     </div>
                 </div>
@@ -727,7 +742,7 @@
                         <div class="keyword-tab">Inclusive Practices</div>
                     </div>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc7.png?raw=true" alt="Classroom implementing inclusive pedagogical approaches">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc7.png?raw=true" alt="Classroom implementing inclusive pedagogical approaches" class="resized-image">
                         <div class="image-caption">Classroom implementing inclusive pedagogical approaches</div>
                     </div>
                     <p>The relationship between sociocultural linguistics and academic literacy development demands pedagogical approaches that:</p>
@@ -740,7 +755,7 @@
                     <p><strong>Support identity development</strong> alongside academic skill acquisition</p>
                     
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc8.png?raw=true" alt="Students confidently expressing academic knowledge through diverse cultural lenses">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc8.png?raw=true" alt="Students confidently expressing academic knowledge through diverse cultural lenses" class="resized-image">
                         <div class="image-caption">Students confidently expressing academic knowledge through diverse cultural lenses</div>
                     </div>
                     <p>This relationship ultimately represents a call for epistemic decolonisation in South African higher education, moving towards inclusive practices that honour the linguistic and cultural wealth of the continent whilst preparing students for academic and professional success.</p>
@@ -755,7 +770,7 @@
                         <div class="keyword-tab">Further Information</div>
                     </div>
                     <div class="image-container">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc1.png?raw=true" alt="University contact information and academic staff">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc1.png?raw=true" alt="University contact information and academic staff" class="cropped-image">
                         <div class="image-caption">University contact information and academic staff</div>
                     </div>
                     <p>For further information about sociocultural linguistics and academic literacy research, please contact the relevant academic departments at your institution or reach out to researchers specialising in multilingual education and African epistemologies.</p>
