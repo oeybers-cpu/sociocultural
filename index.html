@@ -12,7 +12,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
         :root {
             /* Colour Variables - Updated with exact specifications */
             --primary: #4fc3f7;
@@ -30,21 +29,17 @@
             --card-padding: 20px;
             --card-gap: 25px;
             --nav-banner-height: 60px;
-            
             /* Sun variables */
             --sun-colour: #FFC107;
             --sun-glow: #FFA000;
             --sun-ray-colour: #FFD700;
-            
             /* Warning colours */
             --warning-red: #ff4444;
             --warning-glow: #ff6666;
-            
             /* Font Variables */
             --font-heading: 'Orbitron', sans-serif;
             --font-body: 'Exo 2', sans-serif;
         }
-        
         body {
             background: linear-gradient(135deg, var(--darker), var(--dark));
             color: var(--light);
@@ -55,7 +50,6 @@
             font-family: var(--font-body);
             line-height: 1.6;
         }
-        
         /* Grid Lines Background - Fixed with proper contrast */
         .grid-lines {
             position: fixed;
@@ -70,7 +64,6 @@
             pointer-events: none;
             z-index: -1;
         }
-        
         /* NEW: Dedicated Navigation Banner */
         .nav-banner {
             position: fixed;
@@ -87,7 +80,6 @@
             padding: 0 25px;
             border-bottom: 1px solid rgba(207, 64, 255, 0.3);
         }
-        
         /* Navigation Buttons */
         .nav-button {
             z-index: 1001;
@@ -107,7 +99,6 @@
             font-size: 0.9rem;
             font-weight: 600;
         }
-        
         .nav-button:hover {
             background: rgba(65, 105, 225, 0.2);
             transform: translateY(-2px);
@@ -115,18 +106,15 @@
             color: var(--light);
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
-        
         .contact-button {
             border-color: var(--digital-purple);
             color: var(--digital-purple);
             box-shadow: 0 0 15px rgba(207, 64, 255, 0.3);
         }
-        
         .contact-button:hover {
             background: rgba(207, 64, 255, 0.2);
             box-shadow: 0 0 20px rgba(207, 64, 255, 0.5);
         }
-        
         /* Header Styles */
         .top-header {
             position: fixed;
@@ -142,7 +130,6 @@
             z-index: 999;
             backdrop-filter: blur(10px);
         }
-        
         .top-header h1 {
             font-size: 1.8rem;
             background: linear-gradient(90deg, var(--primary), var(--digital-purple));
@@ -159,12 +146,10 @@
             margin: 0 auto;
             max-width: 70%;
         }
-        
         @keyframes pulseText {
             0% { text-shadow: 0 0 9px rgba(207, 64, 255, 0.6); }
             100% { text-shadow: 0 0 16px rgba(207, 64, 255, 0.8), 0 0 24px rgba(207, 64, 255, 0.6); }
         }
-        
         /* Page Layout */
         .page-layout {
             display: grid;
@@ -172,7 +157,6 @@
             gap: 20px;
             margin-top: 140px;
         }
-        
         /* Navigation Sidebar */
         .nav-sidebar {
             background: var(--card-bg);
@@ -185,13 +169,11 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(207, 64, 255, 0.2);
         }
-        
         .sidebar-nav {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
-        
         .sidebar-link {
             color: var(--digital-purple);
             text-decoration: none;
@@ -207,7 +189,6 @@
             align-items: center;
             gap: 10px;
         }
-        
         .sidebar-link:hover {
             background: rgba(65, 105, 225, 0.2);
             box-shadow: 0 0 15px rgba(65, 105, 225, 0.6);
@@ -215,20 +196,17 @@
             color: var(--light);
             border-color: var(--royal-blue-light);
         }
-        
         .sidebar-link.active {
             background: rgba(65, 105, 225, 0.3);
             box-shadow: 0 0 20px rgba(65, 105, 225, 0.8);
             font-weight: 600;
         }
-        
         /* Content Container */
         .main-container {
             width: 100%;
             max-width: 1400px;
             margin: 0 auto;
         }
-        
         /* Full-width content card */
         .full-width-card {
             background: var(--card-bg);
@@ -242,7 +220,6 @@
             position: relative;
             overflow: hidden;
         }
-        
         .full-width-card::before {
             content: '';
             position: absolute;
@@ -256,11 +233,9 @@
             transition: transform 0.5s ease;
             z-index: 1;
         }
-        
         .full-width-card:hover::before {
             transform: scaleX(1);
         }
-        
         .full-width-card h2 {
             color: var(--digital-purple);
             font-size: 1.5rem;
@@ -270,20 +245,17 @@
             align-items: center;
             gap: 10px;
         }
-        
         .full-width-card h3 {
             color: var(--royal-blue-light);
             font-size: 1.3rem;
             margin: 20px 0 15px;
             font-family: var(--font-heading);
         }
-        
         .full-width-card p {
             margin-bottom: 15px;
             line-height: 1.7;
             color: var(--light);
         }
-        
         /* Image container styles */
         .image-container {
             width: 100%;
@@ -295,18 +267,15 @@
             border: 1px solid rgba(79, 195, 247, 0.3);
             background: rgba(10, 10, 20, 0.5);
         }
-        
         .image-container:hover {
             box-shadow: 0 0 20px rgba(207, 64, 255, 0.4);
             transform: translateY(-3px);
         }
-        
         .image-container img {
             width: 100%;
             height: auto;
             display: block;
         }
-        
         .image-caption {
             background: rgba(20, 20, 30, 0.8);
             padding: 10px 15px;
@@ -315,7 +284,6 @@
             text-align: center;
             border-top: 1px solid rgba(79, 195, 247, 0.3);
         }
-        
         /* Keyword Tabs Styles */
         .keyword-tabs {
             display: flex;
@@ -323,7 +291,6 @@
             gap: 10px;
             margin-bottom: 15px;
         }
-        
         .keyword-tab {
             background: rgba(20, 20, 30, 0.8);
             border: 1px solid var(--royal-blue);
@@ -340,7 +307,6 @@
             position: relative;
             overflow: hidden;
         }
-        
         .keyword-tab::before {
             content: '';
             position: absolute;
@@ -351,16 +317,13 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: left 0.5s ease;
         }
-        
         .keyword-tab:hover::before {
             left: 100%;
         }
-        
         .keyword-tab:hover {
             box-shadow: 0 0 12px rgba(65, 105, 225, 0.8);
             transform: translateY(-2px);
         }
-        
         /* Section Title */
         .section-title {
             color: var(--digital-purple);
@@ -371,12 +334,10 @@
             font-family: var(--font-heading);
             text-align: center;
         }
-        
         /* Content Sections - Added specific IDs for navigation */
         .content-section {
             scroll-margin-top: 140px;
         }
-        
         /* Footer Navigation Buttons */
         .footer-nav {
             display: flex;
@@ -385,7 +346,6 @@
             margin-top: 30px;
             padding: 15px 0;
         }
-        
         .footer-button {
             background: rgba(20, 20, 30, 0.7);
             border: 1px solid var(--royal-blue);
@@ -403,7 +363,6 @@
             font-size: 0.9rem;
             font-weight: 600;
         }
-        
         .footer-button:hover {
             background: rgba(65, 105, 225, 0.2);
             transform: translateY(-3px);
@@ -411,115 +370,132 @@
             color: var(--light);
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
-        
         .footer-button.top {
             background: rgba(20, 20, 30, 0.7);
             border: 1px solid var(--digital-purple);
             color: var(--digital-purple);
         }
-        
         .footer-button.top:hover {
             background: rgba(207, 64, 255, 0.2);
             box-shadow: 0 0 20px rgba(207, 64, 255, 0.5);
             color: var(--light);
         }
-        
         /* Responsive Design */
         @media (max-width: 1200px) {
             .page-layout {
                 grid-template-columns: 1fr 2fr;
             }
         }
-        
         @media (max-width: 768px) {
             .page-layout {
                 grid-template-columns: 1fr;
             }
-            
             .nav-sidebar {
                 position: static;
                 margin-bottom: 20px;
             }
-            
             .sidebar-nav {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 10px;
             }
-            
             .sidebar-link {
                 padding: 10px 8px;
                 font-size: 0.75rem;
             }
         }
-        
         @media (max-width: 600px) {
             body {
                 padding: 15px;
             }
-            
             .nav-banner {
                 height: 55px;
                 padding: 0 15px;
             }
-            
             .nav-button {
                 padding: 8px 15px;
                 font-size: 0.8rem;
             }
-            
             .top-header {
                 top: 55px;
                 padding: 12px 10px;
             }
-            
             .top-header h1 {
                 font-size: 1.3rem;
                 max-width: 100%;
                 padding: 0 50px;
                 margin-top: 5px;
             }
-            
             .full-width-card {
                 padding: 20px;
                 margin: 20px 0;
             }
-            
             .full-width-card h2 {
                 font-size: 1.3rem;
             }
-            
             .section-title {
                 font-size: 1.4rem;
             }
-            
             .nav-sidebar {
                 top: 100px;
             }
-            
             .footer-nav {
                 flex-direction: column;
                 align-items: center;
             }
         }
-        
         /* Image sizing classes */
         .reduced-size {
             width: 45%; /* 55% reduction from 100% */
             margin: 0 auto;
         }
-        
         .cropped-top {
             width: 100%;
             height: 200px;
             object-fit: cover;
             object-position: top;
         }
+        /* New: Two cards side by side */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card-half {
+            flex: 1 1 calc(50% - 10px); /* Two cards per row, accounting for gap */
+            background: var(--card-bg);
+            border: 1px solid rgba(207, 64, 255, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 15px rgba(207, 64, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+        .card-half:hover {
+            box-shadow: 0 0 20px rgba(207, 64, 255, 0.3);
+            transform: translateY(-3px);
+        }
+        .card-half h3 {
+            color: var(--royal-blue-light);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-family: var(--font-heading);
+        }
+        .card-half p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        /* Ensure responsiveness for two cards */
+        @media (max-width: 768px) {
+            .card-half {
+                flex: 1 1 100%; /* Full width on smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="grid-lines"></div>
-    
     <div class="nav-banner">
         <a href="#top" class="nav-button" id="homeButton">
             <i class="fas fa-home"></i> Home
@@ -528,11 +504,9 @@
             <i class="fas fa-envelope"></i> Contact
         </a>
     </div>
-    
     <div class="top-header" id="top">
         <h1>Relationship Between Sociocultural Linguistics and Academic Literacy</h1>
     </div>
-
     <div class="main-container">
         <div class="page-layout">
             <div class="nav-sidebar">
@@ -566,7 +540,6 @@
                     </a>
                 </div>
             </div>
-            
             <div class="content-area">
                 <div class="full-width-card content-section" id="introduction">
                     <h2><i class="fas fa-graduation-cap"></i> Introduction</h2>
@@ -581,8 +554,21 @@
                     </div>
                     <p>The relationship between sociocultural linguistics and academic literacy development in post-apartheid South Africa is fundamentally transformative, challenging traditional autonomous models of literacy whilst foregrounding the cultural, social, and political dimensions of language learning in higher education contexts.</p>
                     <p>This relationship represents a paradigm shift from viewing literacy as a neutral, technical skill towards understanding it as a socially embedded practice that reflects and shapes power relations, cultural identities, and knowledge systems within academic institutions.</p>
+                    
+                    <!-- Two cards side by side example -->
+                    <div class="card-container">
+                        <div class="card-half">
+                            <h3>Key Concept 1</h3>
+                            <p>This card presents the first key concept related to the introduction. It highlights important aspects of sociocultural linguistics in the South African context.</p>
+                            <p>Further details about this concept can be explored here, providing a deeper understanding of its significance.</p>
+                        </div>
+                        <div class="card-half">
+                            <h3>Key Concept 2</h3>
+                            <p>This card explores another important aspect of academic literacy development. It complements the first card by offering a different perspective.</p>
+                            <p>Together, these cards provide a more comprehensive view of the introductory material.</p>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="full-width-card content-section" id="theoretical-foundations">
                     <h2><i class="fas fa-book"></i> Theoretical Foundations</h2>
                     <div class="keyword-tabs">
@@ -596,15 +582,27 @@
                     </div>
                     <h3>Sociocultural Linguistics</h3>
                     <p>Sociocultural linguistics encompasses a broad range of theories and methods for studying language in its sociocultural context, moving beyond narrow quantitative sociolinguistic approaches to embrace transdisciplinary perspectives from linguistic anthropology, discourse analysis, and sociology of language. This field emphasises how language functions as a mediating tool that bridges individual cognitive processes with wider cultural and societal structures.</p>
-                    
                     <h3>Academic Literacy Development</h3>
                     <p>Academic literacy development, particularly through Lea and Street's influential three-model framework, has evolved from technical skills-based approaches towards more socially situated understandings. The academic literacies model specifically addresses meaning-making, identity, power and authority, foregrounding the institutional nature of what "counts" as knowledge in particular contexts.</p>
                     <div class="image-container reduced-size">
                         <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc3.png?raw=true" alt="Visual representation of Lea and Street's three-model framework">
                         <div class="image-caption">Lea and Street's three-model framework</div>
                     </div>
+                    
+                    <!-- Two cards side by side example -->
+                    <div class="card-container">
+                        <div class="card-half">
+                            <h3>Theory A</h3>
+                            <p>This card delves into the specifics of Theory A, explaining its core principles and how it applies to sociocultural linguistics.</p>
+                            <p>Examples and case studies relevant to this theory are presented here.</p>
+                        </div>
+                        <div class="card-half">
+                            <h3>Theory B</h3>
+                            <p>This card focuses on Theory B, contrasting it with Theory A where necessary to highlight key differences.</p>
+                            <p>The implications of Theory B for academic literacy are discussed in detail.</p>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="full-width-card content-section" id="south-african-context">
                     <h2><i class="fas fa-globe-africa"></i> The South African Context: Language and Power</h2>
                     <div class="keyword-tabs">
@@ -617,14 +615,26 @@
                         <div class="image-caption">Linguistic diversity in South Africa</div>
                     </div>
                     <p>In post-apartheid South Africa's multilingual society with twelve official languages, the relationship between sociocultural linguistics and academic literacy development is particularly complex. Despite constitutional provisions promoting multilingualism, English and Afrikaans remain dominant in higher education, whilst more than 76% of the population speaks African languages as their home languages.</p>
-                    
                     <p>This linguistic landscape reflects what scholars term a "gridlock of collusion" between political elites and African-language speakers who seek the perceived benefits of English-medium education. The persistence of English hegemony demonstrates how language ideologies—socially constructed beliefs about language value and legitimacy—continue to shape educational practices.</p>
                     <div class="image-container reduced-size">
                         <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc5.png?raw=true" alt="Students navigating between home languages and academic English">
                         <div class="image-caption">Students navigating between home languages and academic English</div>
                     </div>
+                    
+                    <!-- Two cards side by side example -->
+                    <div class="card-container">
+                        <div class="card-half">
+                            <h3>Language Policy</h3>
+                            <p>An overview of South Africa's language policy and its implementation in educational settings.</p>
+                            <p>Analysis of the challenges faced in achieving true multilingualism.</p>
+                        </div>
+                        <div class="card-half">
+                            <h3>Social Dynamics</h3>
+                            <p>Exploring the social dynamics that influence language choice and perception.</p>
+                            <p>The role of prestige and power in language use within academic contexts.</p>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="full-width-card content-section" id="challenging-autonomous">
                     <h2><i class="fas fa-balance-scale"></i> Challenging Autonomous Models</h2>
                     <div class="keyword-tabs">
@@ -637,14 +647,26 @@
                         <div class="image-caption">Contrast between autonomous and ideological models of literacy</div>
                     </div>
                     <p>The sociocultural approach fundamentally opposes autonomous models of literacy that view reading and writing as neutral, decontextualised technical skills. Street's ideological model of literacy, central to New Literacy Studies, recognises that literacy practices are always embedded in power relations and cultural contexts.</p>
-                    
                     <p>In South Africa, autonomous approaches manifest in discriminatory practices such as monolingual multiple-choice tests that prevent students from demonstrating disciplinary mastery whilst marginalising diverse knowledge production tools. These approaches perpetuate what researchers call "epistemic injustice" by privileging Global North epistemologies over African knowledge systems.</p>
                     <div class="image-container reduced-size">
                         <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc7.png?raw=true" alt="Students struggling with decontextualised academic tasks">
                         <div class="image-caption">Students struggling with decontextualised academic tasks</div>
                     </div>
+                    
+                    <!-- Two cards side by side example -->
+                    <div class="card-container">
+                        <div class="card-half">
+                            <h3>Critique of Autonomy</h3>
+                            <p>A detailed critique of the autonomous model of literacy and its limitations.</p>
+                            <p>Why a context-independent view of literacy is problematic.</p>
+                        </div>
+                        <div class="card-half">
+                            <h3>Ideological Impact</h3>
+                            <p>Examining the real-world impact of ideological models in educational practice.</p>
+                            <p>How these models empower or disempower different student groups.</p>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="full-width-card content-section" id="sociocultural-frameworks">
                     <h2><i class="fas fa-users"></i> Sociocultural Academic Literacy Frameworks</h2>
                     <div class="keyword-tabs">
@@ -657,10 +679,22 @@
                         <div class="image-caption">Students collaborating using multiple languages and cultural resources</div>
                     </div>
                     <p>Recent scholarship has developed sociocultural theories for academic literacy research that incorporate students' cultural identities and multilingual resources. This approach recognises that South African students arrive at universities with diverse cultural capital and literacy practices from their communities, which should be valued rather than replaced.</p>
-                    
                     <p>The Academic Literacies as Social Practices framework emphasises that literacy development occurs through social interaction and cultural mediation. Students' multiple identities in South Africa's multicultural context require pedagogical approaches that acknowledge their complex linguistic repertoires and cultural resources.</p>
+                    
+                    <!-- Two cards side by side example -->
+                    <div class="card-container">
+                        <div class="card-half">
+                            <h3>Framework A</h3>
+                            <p>Description of Framework A and its application in academic settings.</p>
+                            <p>Benefits and potential drawbacks of this approach.</p>
+                        </div>
+                        <div class="card-half">
+                            <h3>Framework B</h3>
+                            <p>Overview of Framework B and how it differs from Framework A.</p>
+                            <p>Case studies demonstrating the effectiveness of Framework B.</p>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="full-width-card content-section" id="indigenous-knowledge">
                     <h2><i class="fas fa-tree"></i> Indigenous Knowledge Systems Integration</h2>
                     <div class="keyword-tabs">
@@ -673,14 +707,26 @@
                         <div class="image-caption">Traditional African storytelling and knowledge transmission</div>
                     </div>
                     <p>A critical dimension of this relationship involves integrating Indigenous Knowledge Systems (IKS) into academic literacy development. Research demonstrates how indigenous pedagogies, such as Ma'at and Tewahedo traditions, provide collaborative learning frameworks that align with contemporary social practice theories of literacy.</p>
-                    
                     <p>Studies of isiXhosa and isiZulu folktales and traditional songs reveal sophisticated literacy instruction embedded in indigenous practices, including dialogical interaction, integrated knowledge forms, and multiliteracy development. These findings challenge Western-centric assumptions about literacy development and demonstrate the wealth of African epistemological resources.</p>
                     <div class="image-container reduced-size">
                         <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc2.png?raw=true" alt="Traditional African educational practices and oral traditions">
                         <div class="image-caption">Traditional African educational practices and oral traditions</div>
                     </div>
+                    
+                    <!-- Two cards side by side example -->
+                    <div class="card-container">
+                        <div class="card-half">
+                            <h3>IKS Example 1</h3>
+                            <p>Exploring the Ma'at traditions and their relevance to modern education.</p>
+                            <p>How these traditions can be integrated into curriculum design.</p>
+                        </div>
+                        <div class="card-half">
+                            <h3>IKS Example 2</h3>
+                            <p>Investigating the Tewahedo traditions and their pedagogical value.</p>
+                            <p>Comparing these traditions with other indigenous knowledge systems.</p>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="full-width-card content-section" id="transformative-potential">
                     <h2><i class="fas fa-lightbulb"></i> Transformative Potential</h2>
                     <div class="keyword-tabs">
@@ -693,14 +739,26 @@
                         <div class="image-caption">Students successfully using multiple languages in academic contexts</div>
                     </div>
                     <p>The integration of sociocultural linguistics with academic literacy development offers transformative possibilities for South African higher education. Translanguaging approaches that leverage students' full linguistic repertoires show promise for simultaneous African language development and academic success.</p>
-                    
                     <p>The proposed Inclusive African Theory of Academic Literacy (ATAL) argues for moving beyond autonomous constructs towards approaches that value students' evolving identities and cultural intelligences. This framework integrates students' cultures and African epistemologies to inspire new assessment methods and enable demonstration of disciplinary mastery across multiple vocabularies.</p>
                     <div class="image-container reduced-size">
                         <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc4.png?raw=true" alt="Innovative assessment methods incorporating multiple ways of knowing">
                         <div class="image-caption">Innovative assessment methods incorporating multiple ways of knowing</div>
                     </div>
+                    
+                    <!-- Two cards side by side example -->
+                    <div class="card-container">
+                        <div class="card-half">
+                            <h3>Innovation A</h3>
+                            <p>Detailing a specific innovative approach to academic literacy.</p>
+                            <p>Evidence supporting the effectiveness of this innovation.</p>
+                        </div>
+                        <div class="card-half">
+                            <h3>Innovation B</h3>
+                            <p>Presenting another transformative innovation in the field.</p>
+                            <p>Comparing outcomes with traditional methods.</p>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="full-width-card content-section" id="challenges-opportunities">
                     <h2><i class="fas fa-road"></i> Challenges and Opportunities</h2>
                     <div class="keyword-tabs">
@@ -713,14 +771,26 @@
                         <div class="image-caption">University infrastructure supporting multilingual education</div>
                     </div>
                     <p>Current challenges include institutional resistance to linguistic transformation, limited resources for African language development, and persistent ideological preferences for English-medium instruction. However, recent policy developments such as the BELA Act signal potential shifts towards mother-tongue-based bilingual education.</p>
-                    
                     <p>The establishment of African language departments in 92% of South African universities, alongside language units in 58% of institutions, provides infrastructure for transformation. Critical research explores alternatives to "one-size-fits-all" solutions, emphasising curriculum responsiveness to diverse student needs.</p>
                     <div class="image-container reduced-size">
                         <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc6.png?raw=true" alt="Policy documents and institutional transformation initiatives">
                         <div class="image-caption">Policy documents and institutional transformation initiatives</div>
                     </div>
+                    
+                    <!-- Two cards side by side example -->
+                    <div class="card-container">
+                        <div class="card-half">
+                            <h3>Major Challenge</h3>
+                            <p>An in-depth look at one of the primary challenges facing implementation.</p>
+                            <p>Strategies proposed to overcome this challenge.</p>
+                        </div>
+                        <div class="card-half">
+                            <h3>Key Opportunity</h3>
+                            <p>Highlighting a significant opportunity for advancement in the field.</p>
+                            <p>How stakeholders can leverage this opportunity effectively.</p>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="full-width-card content-section" id="implications">
                     <h2><i class="fas fa-cogs"></i> Implications for Practice</h2>
                     <div class="keyword-tabs">
@@ -733,21 +803,32 @@
                         <div class="image-caption">Classroom implementing inclusive pedagogical approaches</div>
                     </div>
                     <p>The relationship between sociocultural linguistics and academic literacy development demands pedagogical approaches that:</p>
-                    
                     <h3>Key Principles</h3>
                     <p><strong>Recognise literacy as socially embedded practice</strong> rather than neutral skill</p>
                     <p><strong>Value students' multilingual resources and cultural knowledge</strong></p>
                     <p><strong>Challenge institutional power structures</strong> that marginalise African epistemologies</p>
                     <p><strong>Integrate indigenous knowledge systems</strong> into disciplinary learning</p>
                     <p><strong>Support identity development</strong> alongside academic skill acquisition</p>
-                    
                     <div class="image-container reduced-size">
                         <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc8.png?raw=true" alt="Students confidently expressing academic knowledge through diverse cultural lenses">
                         <div class="image-caption">Students confidently expressing academic knowledge through diverse cultural lenses</div>
                     </div>
                     <p>This relationship ultimately represents a call for epistemic decolonisation in South African higher education, moving towards inclusive practices that honour the linguistic and cultural wealth of the continent whilst preparing students for academic and professional success.</p>
+                    
+                    <!-- Two cards side by side example -->
+                    <div class="card-container">
+                        <div class="card-half">
+                            <h3>Pedagogical Strategy 1</h3>
+                            <p>Describing the first recommended pedagogical strategy for educators.</p>
+                            <p>Practical steps for implementing this strategy in the classroom.</p>
+                        </div>
+                        <div class="card-half">
+                            <h3>Pedagogical Strategy 2</h3>
+                            <p>Outlining the second key pedagogical approach for consideration.</p>
+                            <p>Resources and support needed for successful adoption.</p>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="full-width-card content-section" id="contact">
                     <h2><i class="fas fa-envelope"></i> Contact Information</h2>
                     <div class="keyword-tabs">
@@ -760,8 +841,21 @@
                         <div class="image-caption">University contact information and academic staff</div>
                     </div>
                     <p>For further information about sociocultural linguistics and academic literacy research, please contact the relevant academic departments at your institution or reach out to researchers specialising in multilingual education and African epistemologies.</p>
+                    
+                    <!-- Two cards side by side example -->
+                    <div class="card-container">
+                        <div class="card-half">
+                            <h3>General Enquiries</h3>
+                            <p>Contact information for general academic enquiries related to this field.</p>
+                            <p>Office hours and preferred methods of communication.</p>
+                        </div>
+                        <div class="card-half">
+                            <h3>Research Collaboration</h3>
+                            <p>Details for researchers interested in collaboration opportunities.</p>
+                            <p>Guidelines for proposing joint research projects.</p>
+                        </div>
+                    </div>
                 </div>
-
                 <!-- Footer Navigation -->
                 <div class="footer-nav">
                     <a href="#top" class="footer-button top">
@@ -774,7 +868,6 @@
             </div>
         </div>
     </div>
-
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -789,12 +882,10 @@
                 }
             });
         });
-
         // Update active sidebar link based on scroll position
         window.addEventListener('scroll', function() {
             const sections = document.querySelectorAll('.content-section');
             const navLinks = document.querySelectorAll('.sidebar-link');
-            
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 200;
@@ -802,7 +893,6 @@
                     current = section.getAttribute('id');
                 }
             });
-
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === '#' + current) {
