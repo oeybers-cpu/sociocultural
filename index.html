@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sociocultural Linguistics and Academic Literacy</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css  ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -27,6 +27,7 @@
             --royal-blue-light: #6c8eff;
             --aqua-blue: #00FFFF;
             --nav-banner-height: 60px;
+            --top-header-height-sm: 80px; /* Approximate height on small screens */
         }
         body {
             background: linear-gradient(135deg, var(--darker), var(--dark));
@@ -107,7 +108,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 15px 20px;
+            padding: 15px 20px; /* Adjusted padding */
             background: rgba(10, 10, 20, 0.8);
             border-bottom: 1px solid rgba(207, 64, 255, 0.3);
             z-index: 999;
@@ -294,7 +295,7 @@
             text-align: center;
         }
         .content-section {
-            scroll-margin-top: 140px;
+            scroll-margin-top: 140px; /* Default for larger screens */
         }
         .footer-nav {
             display: flex;
@@ -359,6 +360,10 @@
                 padding: 10px 8px;
                 font-size: 0.75rem;
             }
+            /* Adjust image size on medium screens */
+            .reduced-size {
+                width: 60%;
+            }
         }
         @media (max-width: 600px) {
             body {
@@ -374,13 +379,13 @@
             }
             .top-header {
                 top: 55px;
-                padding: 12px 10px;
+                padding: 10px 10px; /* Reduced padding */
+                height: var(--top-header-height-sm); /* Define height for scroll margin calculation */
             }
             .top-header h1 {
                 font-size: 1.3rem;
                 max-width: 100%;
-                padding: 0 50px;
-                margin-top: 5px;
+                /* Removed padding and margin-top for simpler, more predictable layout */
             }
             .full-width-card {
                 padding: 20px;
@@ -399,7 +404,16 @@
                 flex-direction: column;
                 align-items: center;
             }
+            /* Adjust image size on small screens */
+            .reduced-size {
+                width: 100%; /* Make images full width on small screens */
+            }
+             /* Adjust scroll margin for fixed headers on small screens */
+            .content-section {
+                scroll-margin-top: calc(var(--nav-banner-height) + var(--top-header-height-sm) + 10px); /* 55px + ~80px + buffer */
+            }
         }
+        /* Original .reduced-size definition for larger screens */
         .reduced-size {
             width: 45%;
             margin: 0 auto;
@@ -453,9 +467,9 @@
 <body>
     <div class="grid-lines"></div>
     <div class="nav-banner">
-        <a href="  https://oeybers-cpu.github.io/a_lit_models/  " class="nav-button" id="homeButton">
-    <i class="fas fa-home"></i> Home
-</a>
+        <a href="https://oeybers-cpu.github.io/a_lit_models/" class="nav-button" id="homeButton">
+            <i class="fas fa-home"></i> Home
+        </a>
         <a href="https://oeybers-cpu.github.io/contact/" class="nav-button contact-button" id="contactButton">
             <i class="fas fa-envelope"></i> Contact
         </a>
@@ -504,21 +518,21 @@
                         <div class="keyword-tab">Post-Apartheid</div>
                         <div class="keyword-tab">Cultural Dimensions</div>
                     </div>
-                    <div class="image-container reduced-size"> 
-                        <img src="https://news.artnet.com/app/news-upload/2024/07/ancient-egypt-mastaba-getty-1024x808.jpg  " alt="Kemet" class="cropped-top">
+                    <div class="image-container reduced-size">
+                        <img src="https://news.artnet.com/app/news-upload/2024/07/ancient-egypt-mastaba-getty-1024x808.jpg" alt="Kemet" class="cropped-top">
                         <div class="image-caption">The Future</div>
                     </div>
                     <div class="card-container">
                         <div class="card-half">
                             <h3>Social Concept</h3>
                             <p>Academic literacy is not a set of isolated skills, but a <strong>social practice</strong> deeply embedded in institutional power structures. In South Africa, English dominance in higher education creates social hierarchies that can marginalise students whose home languages are African.</p>
-                            <img src="https://live.staticflickr.com/7332/16422407686_2fac58ce0d_b.jpg  " alt="Students engaged in collaborative academic discussion" style="width: 100%; border-radius: 8px; margin: 15px 0;">
+                            <img src="https://live.staticflickr.com/7332/16422407686_2fac58ce0d_b.jpg" alt="Students engaged in collaborative academic discussion" style="width: 100%; border-radius: 8px; margin: 15px 0;">
                             <p>Leveraging the social concept means recognising that literacy develops through collaboration and participation. It challenges autonomous models by foregrounding how power and authority shape what "counts" as legitimate academic knowledge.</p>
                         </div>
                         <div class="card-half">
                             <h3>Cultural Concept</h3>
                             <p>Academic literacy is profoundly shaped by <strong>cultural context</strong>. In post-apartheid South Africa, this involves valuing the rich cultural capital, including Indigenous Knowledge Systems like Ma'at traditions, found in students' home communities and languages.</p>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Capleton1.jpg/1200px-Capleton1.jpg  " alt="Cultural expression and oral tradition" style="width: 100%; border-radius: 8px; margin: 15px 0;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Capleton1.jpg/1200px-Capleton1.jpg" alt="Cultural expression and oral tradition" style="width: 100%; border-radius: 8px; margin: 15px 0;">
                             <p>The cultural concept challenges Western-centric epistemologies. Integrating these cultural resources into pedagogy is essential for epistemic decolonisation, enabling students to demonstrate mastery through their full linguistic and cultural repertoires.</p>
                         </div>
                     </div>
@@ -555,7 +569,7 @@
                         <div class="keyword-tab">Indigenous Language Marginalisation</div>
                     </div>
                     <div class="image-container reduced-size">
-                        <img src="  https://github.com/oeybers-cpu/sociocultural/blob/main/sc4.png?raw=true" alt="Map of South Africa showing linguistic diversity">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc4.png?raw=true" alt="Map of South Africa showing linguistic diversity">
                         <div class="image-caption">Language as Knowledge Systems</div>
                     </div>
                     <div class="card-container">
@@ -579,7 +593,7 @@
                         <div class="keyword-tab">Decontextualised learners</div>
                     </div>
                     <div class="image-container reduced-size">
-                        <img src="  https://github.com/oeybers-cpu/sociocultural/blob/main/sc6.png?raw=true" alt="Contrast between autonomous and ideological models of literacy">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc6.png?raw=true" alt="Contrast between autonomous and ideological models of literacy">
                         <div class="image-caption">Models of Literacy</div>
                     </div>
                     <div class="card-container">
@@ -603,7 +617,7 @@
                         <div class="keyword-tab">Indigenous Knowledge Systems</div>
                     </div>
                     <div class="image-container reduced-size">
-                        <img src="  https://github.com/oeybers-cpu/sociocultural/blob/main/sc8.png?raw=true" alt="Students collaborating using multiple languages and cultural resources">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc8.png?raw=true" alt="Students collaborating using multiple languages and cultural resources">
                         <div class="image-caption">Collaborative Learning</div>
                     </div>
                     <div class="card-container">
@@ -627,7 +641,7 @@
                         <div class="keyword-tab">Ubuntu</div>
                     </div>
                     <div class="image-container reduced-size">
-                        <img src="  https://www.researchgate.net/publication/326511426/figure/fig1/AS  :11431281119241211@1676044731206/Evidence-of-a-long-history-of-literacy-and-book-culture-in-Ethiopia-1-A-scribe-in.png" alt="Traditional African storytelling and knowledge transmission" class="cropped-top">
+                        <img src="https://www.researchgate.net/publication/326511426/figure/fig1/AS:11431281119241211@1676044731206/Evidence-of-a-long-history-of-literacy-and-book-culture-in-Ethiopia-1-A-scribe-in.png" alt="Traditional African storytelling and knowledge transmission" class="cropped-top">
                         <div class="image-caption">Indigenous Pedagogies</div>
                     </div>
                     <div class="card-container">
@@ -675,7 +689,7 @@
                         <div class="keyword-tab">Cognitive coloniality</div>
                     </div>
                     <div class="image-container reduced-size">
-                        <img src="  https://github.com/oeybers-cpu/sociocultural/blob/main/sc5.png?raw=true" alt="University infrastructure supporting multilingual education">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc5.png?raw=true" alt="University infrastructure supporting multilingual education">
                         <div class="image-caption">Infrastructure for Change</div>
                     </div>
                     <div class="card-container">
@@ -699,7 +713,7 @@
                         <div class="keyword-tab">Inclusive Pedagogy</div>
                     </div>
                     <div class="image-container reduced-size">
-                        <img src="  https://github.com/oeybers-cpu/sociocultural/blob/main/sc7.png?raw=true" alt="Classroom implementing inclusive pedagogical approaches">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc7.png?raw=true" alt="Classroom implementing inclusive pedagogical approaches">
                         <div class="image-caption">Inclusive Classroom</div>
                     </div>
                     <div class="card-container">
@@ -752,5 +766,3 @@
     </script>
 </body>
 </html>
-
-
