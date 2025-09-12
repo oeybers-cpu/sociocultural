@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -108,7 +109,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 15px 20px; /* Adjusted padding */
+            padding: 15px 20px;
             background: rgba(10, 10, 20, 0.8);
             border-bottom: 1px solid rgba(207, 64, 255, 0.3);
             z-index: 999;
@@ -192,8 +193,8 @@
             background: var(--card-bg);
             border: 1px solid rgba(207, 64, 255, 0.2);
             border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
+            padding: 25px;
+            margin: 25px 0;
             backdrop-filter: blur(10px);
             box-shadow: 0 0 18px rgba(207, 64, 255, 0.15);
             transition: all 0.4s ease;
@@ -218,8 +219,8 @@
         }
         .full-width-card h2 {
             color: var(--digital-purple);
-            font-size: 1.5rem;
-            margin-bottom: 20px;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
             font-family: 'Orbitron', sans-serif;
             display: flex;
             align-items: center;
@@ -227,18 +228,18 @@
         }
         .full-width-card h3 {
             color: var(--royal-blue-light);
-            font-size: 1.3rem;
-            margin: 20px 0 15px;
+            font-size: 1.2rem;
+            margin: 15px 0 10px;
             font-family: 'Orbitron', sans-serif;
         }
         .full-width-card p {
-            margin-bottom: 15px;
-            line-height: 1.7;
+            margin-bottom: 12px;
+            line-height: 1.6;
             color: var(--light);
         }
         .image-container {
             width: 100%;
-            margin: 20px 0;
+            margin: 15px 0;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 0 15px rgba(207, 64, 255, 0.2);
@@ -253,8 +254,8 @@
         }
         .image-caption {
             background: rgba(20, 20, 30, 0.8);
-            padding: 10px 15px;
-            font-size: 0.85rem;
+            padding: 8px 12px;
+            font-size: 0.8rem;
             color: var(--lighter-accent);
             text-align: center;
             border-top: 1px solid rgba(79, 195, 247, 0.3);
@@ -262,16 +263,16 @@
         .keyword-tabs {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 15px;
+            gap: 8px;
+            margin-bottom: 12px;
         }
         .keyword-tab {
             background: rgba(20, 20, 30, 0.8);
             border: 1px solid var(--royal-blue);
             color: var(--royal-blue-light);
-            padding: 6px 12px;
+            padding: 5px 10px;
             border-radius: 4px;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -287,21 +288,21 @@
         }
         .section-title {
             color: var(--digital-purple);
-            font-size: 1.6rem;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
             border-bottom: 1px solid rgba(207, 64, 255, 0.3);
             font-family: 'Orbitron', sans-serif;
             text-align: center;
         }
         .content-section {
-            scroll-margin-top: 140px; /* Default for larger screens */
+            scroll-margin-top: 140px;
         }
         .footer-nav {
             display: flex;
             justify-content: center;
             gap: 15px;
-            margin-top: 30px;
+            margin-top: 25px;
             padding: 15px 0;
         }
         .footer-button {
@@ -338,9 +339,57 @@
             box-shadow: 0 0 20px rgba(207, 64, 255, 0.5);
             color: var(--light);
         }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card-half {
+            background: var(--card-bg);
+            border: 1px solid rgba(207, 64, 255, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 15px rgba(207, 64, 255, 0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-half:hover {
+            box-shadow: 0 0 20px rgba(207, 64, 255, 0.3);
+            transform: translateY(-3px);
+        }
+        .card-half h3 {
+            color: var(--royal-blue-light);
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .card-half p {
+            margin-bottom: 12px;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+        .card-half img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 12px 0;
+            height: 150px;
+            object-fit: cover;
+            object-position: top;
+        }
         @media (max-width: 1200px) {
             .page-layout {
                 grid-template-columns: 1fr 2fr;
+            }
+        }
+        @media (max-width: 992px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+            .card-half img {
+                height: 200px;
             }
         }
         @media (max-width: 768px) {
@@ -360,33 +409,6 @@
                 padding: 10px 8px;
                 font-size: 0.75rem;
             }
-            /* Adjust image size on medium screens */
-            .reduced-size {
-                width: 60%;
-            }
-        }
-        @media (max-width: 600px) {
-            body {
-                padding: 15px;
-            }
-            .nav-banner {
-                height: 55px;
-                padding: 0 15px;
-            }
-            .nav-button {
-                padding: 8px 15px;
-                font-size: 0.8rem;
-            }
-            .top-header {
-                top: 55px;
-                padding: 10px 10px; /* Reduced padding */
-                height: var(--top-header-height-sm); /* Define height for scroll margin calculation */
-            }
-            .top-header h1 {
-                font-size: 1.3rem;
-                max-width: 100%;
-                /* Removed padding and margin-top for simpler, more predictable layout */
-            }
             .full-width-card {
                 padding: 20px;
                 margin: 20px 0;
@@ -404,62 +426,56 @@
                 flex-direction: column;
                 align-items: center;
             }
-            /* Adjust image size on small screens */
-            .reduced-size {
-                width: 100%; /* Make images full width on small screens */
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
             }
-             /* Adjust scroll margin for fixed headers on small screens */
-            .content-section {
-                scroll-margin-top: calc(var(--nav-banner-height) + var(--top-header-height-sm) + 10px); /* 55px + ~80px + buffer */
+            .nav-banner {
+                height: 55px;
+                padding: 0 15px;
             }
-        }
-        /* Original .reduced-size definition for larger screens */
-        .reduced-size {
-            width: 45%;
-            margin: 0 auto;
-        }
-        .cropped-top {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            object-position: top;
-        }
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .card-half {
-            flex: 1 1 calc(50% - 10px);
-            background: var(--card-bg);
-            border: 1px solid rgba(207, 64, 255, 0.2);
-            border-radius: 12px;
-            padding: 20px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 15px rgba(207, 64, 255, 0.15);
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-        }
-        .card-half:hover {
-            box-shadow: 0 0 20px rgba(207, 64, 255, 0.3);
-            transform: translateY(-3px);
-        }
-        .card-half h3 {
-            color: var(--royal-blue-light);
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            font-family: 'Orbitron', sans-serif;
-        }
-        .card-half p {
-            margin-bottom: 15px;
-            line-height: 1.6;
-            flex-grow: 1;
-        }
-        @media (max-width: 768px) {
+            .nav-button {
+                padding: 8px 15px;
+                font-size: 0.8rem;
+            }
+            .top-header {
+                top: 55px;
+                padding: 10px 10px;
+                height: var(--top-header-height-sm);
+            }
+            .top-header h1 {
+                font-size: 1.3rem;
+                max-width: 100%;
+            }
+            .full-width-card {
+                padding: 15px;
+                margin: 15px 0;
+            }
+            .full-width-card h2 {
+                font-size: 1.2rem;
+            }
+            .full-width-card h3 {
+                font-size: 1.1rem;
+            }
+            .section-title {
+                font-size: 1.3rem;
+            }
+            .keyword-tabs {
+                gap: 6px;
+            }
+            .keyword-tab {
+                padding: 4px 8px;
+                font-size: 0.6rem;
+            }
             .card-half {
-                flex: 1 1 100%;
+                padding: 15px;
+            }
+            .card-half h3 {
+                font-size: 1rem;
+            }
+            .content-section {
+                scroll-margin-top: calc(var(--nav-banner-height) + var(--top-header-height-sm) + 10px);
             }
         }
     </style>
@@ -518,21 +534,21 @@
                         <div class="keyword-tab">Post-Apartheid</div>
                         <div class="keyword-tab">Cultural Dimensions</div>
                     </div>
-                    <div class="image-container reduced-size">
-                        <img src="https://news.artnet.com/app/news-upload/2024/07/ancient-egypt-mastaba-getty-1024x808.jpg" alt="Kemet" class="cropped-top">
+                    <div class="image-container">
+                        <img src="https://news.artnet.com/app/news-upload/2024/07/ancient-egypt-mastaba-getty-1024x808.jpg" alt="Kemet" style="height: 200px; object-fit: cover;">
                         <div class="image-caption">The Future</div>
                     </div>
                     <div class="card-container">
                         <div class="card-half">
                             <h3>Social Concept</h3>
-                            <p>Academic literacy is not a set of isolated skills, but a <strong>social practice</strong> deeply embedded in institutional power structures. In South Africa, English dominance in higher education creates social hierarchies that can marginalise students whose home languages are African.</p>
-                            <img src="https://live.staticflickr.com/7332/16422407686_2fac58ce0d_b.jpg" alt="Students engaged in collaborative academic discussion" style="width: 100%; border-radius: 8px; margin: 15px 0;">
-                            <p>Leveraging the social concept means recognising that literacy develops through collaboration and participation. It challenges autonomous models by foregrounding how power and authority shape what "counts" as legitimate academic knowledge.</p>
+                            <p>Academic literacy is not a set of isolated skills, but a <strong>social practice</strong> embedded in institutional power structures. In South Africa, English dominance in higher education creates hierarchies that marginalise students whose home languages are African.</p>
+                            <img src="https://live.staticflickr.com/7332/16422407686_2fac58ce0d_b.jpg" alt="Students engaged in collaborative academic discussion">
+                            <p>Leveraging the social concept means recognising that literacy develops through collaboration. It challenges autonomous models by foregrounding how power shapes what "counts" as legitimate academic knowledge.</p>
                         </div>
                         <div class="card-half">
                             <h3>Cultural Concept</h3>
                             <p>Academic literacy is profoundly shaped by <strong>cultural context</strong>. In post-apartheid South Africa, this involves valuing the rich cultural capital, including Indigenous Knowledge Systems like Ma'at traditions, found in students' home communities and languages.</p>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Capleton1.jpg/1200px-Capleton1.jpg" alt="Cultural expression and oral tradition" style="width: 100%; border-radius: 8px; margin: 15px 0;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Capleton1.jpg/1200px-Capleton1.jpg" alt="Cultural expression and oral tradition">
                             <p>The cultural concept challenges Western-centric epistemologies. Integrating these cultural resources into pedagogy is essential for epistemic decolonisation, enabling students to demonstrate mastery through their full linguistic and cultural repertoires.</p>
                         </div>
                     </div>
@@ -544,8 +560,8 @@
                         <div class="keyword-tab">Social Anthropology</div>
                         <div class="keyword-tab">Educational Studies</div>
                     </div>
-                    <div class="image-container reduced-size">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc2.png?raw=true" alt="Sociocultural linguistics theoretical framework">
+                    <div class="image-container">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc2.png?raw=true" alt="Sociocultural linguistics theoretical framework" style="height: 200px; object-fit: cover;">
                         <div class="image-caption">Theoretical Framework</div>
                     </div>
                     <div class="card-container">
@@ -568,8 +584,8 @@
                         <div class="keyword-tab">Eleven Official Languages</div>
                         <div class="keyword-tab">Indigenous Language Marginalisation</div>
                     </div>
-                    <div class="image-container reduced-size">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc4.png?raw=true" alt="Map of South Africa showing linguistic diversity">
+                    <div class="image-container">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc4.png?raw=true" alt="Map of South Africa showing linguistic diversity" style="height: 200px; object-fit: cover;">
                         <div class="image-caption">Language as Knowledge Systems</div>
                     </div>
                     <div class="card-container">
@@ -592,8 +608,8 @@
                         <div class="keyword-tab">Cultural erasure</div>
                         <div class="keyword-tab">Decontextualised learners</div>
                     </div>
-                    <div class="image-container reduced-size">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc6.png?raw=true" alt="Contrast between autonomous and ideological models of literacy">
+                    <div class="image-container">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc6.png?raw=true" alt="Contrast between autonomous and ideological models of literacy" style="height: 200px; object-fit: cover;">
                         <div class="image-caption">Models of Literacy</div>
                     </div>
                     <div class="card-container">
@@ -616,8 +632,8 @@
                         <div class="keyword-tab">Multilingual Resources</div>
                         <div class="keyword-tab">Indigenous Knowledge Systems</div>
                     </div>
-                    <div class="image-container reduced-size">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc8.png?raw=true" alt="Students collaborating using multiple languages and cultural resources">
+                    <div class="image-container">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc8.png?raw=true" alt="Students collaborating using multiple languages and cultural resources" style="height: 200px; object-fit: cover;">
                         <div class="image-caption">Collaborative Learning</div>
                     </div>
                     <div class="card-container">
@@ -640,8 +656,8 @@
                         <div class="keyword-tab">Tewahedo Traditions</div>
                         <div class="keyword-tab">Ubuntu</div>
                     </div>
-                    <div class="image-container reduced-size">
-                        <img src="https://www.researchgate.net/publication/326511426/figure/fig1/AS:11431281119241211@1676044731206/Evidence-of-a-long-history-of-literacy-and-book-culture-in-Ethiopia-1-A-scribe-in.png" alt="Traditional African storytelling and knowledge transmission" class="cropped-top">
+                    <div class="image-container">
+                        <img src="https://www.researchgate.net/publication/326511426/figure/fig1/AS:11431281119241211@1676044731206/Evidence-of-a-long-history-of-literacy-and-book-culture-in-Ethiopia-1-A-scribe-in.png" alt="Traditional African storytelling and knowledge transmission" style="height: 200px; object-fit: cover;">
                         <div class="image-caption">Indigenous Pedagogies</div>
                     </div>
                     <div class="card-container">
@@ -664,8 +680,8 @@
                         <div class="keyword-tab">African theory of academic literacy</div>
                         <div class="keyword-tab">Pre-colonial knowledge</div>
                     </div>
-                    <div class="image-container reduced-size">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc3.png?raw=true" alt="Students successfully using multiple languages in academic contexts">
+                    <div class="image-container">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc3.png?raw=true" alt="Students successfully using multiple languages in academic contexts" style="height: 200px; object-fit: cover;">
                         <div class="image-caption">Translanguaging in Action</div>
                     </div>
                     <div class="card-container">
@@ -688,8 +704,8 @@
                         <div class="keyword-tab">Institutional Resistance</div>
                         <div class="keyword-tab">Cognitive coloniality</div>
                     </div>
-                    <div class="image-container reduced-size">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc5.png?raw=true" alt="University infrastructure supporting multilingual education">
+                    <div class="image-container">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc5.png?raw=true" alt="University infrastructure supporting multilingual education" style="height: 200px; object-fit: cover;">
                         <div class="image-caption">Infrastructure for Change</div>
                     </div>
                     <div class="card-container">
@@ -712,8 +728,8 @@
                         <div class="keyword-tab">Identity Development</div>
                         <div class="keyword-tab">Inclusive Pedagogy</div>
                     </div>
-                    <div class="image-container reduced-size">
-                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc7.png?raw=true" alt="Classroom implementing inclusive pedagogical approaches">
+                    <div class="image-container">
+                        <img src="https://github.com/oeybers-cpu/sociocultural/blob/main/sc7.png?raw=true" alt="Classroom implementing inclusive pedagogical approaches" style="height: 200px; object-fit: cover;">
                         <div class="image-caption">Inclusive Classroom</div>
                     </div>
                     <div class="card-container">
@@ -766,3 +782,4 @@
     </script>
 </body>
 </html>
+```
