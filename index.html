@@ -1049,20 +1049,11 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-           const backButton = document.getElementById('backButton');
-if (backButton) {
-    backButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.history.back();
-    });
-}
-                    };
-                    history.replaceState(currentState, document.title);
-                    if (history.length > 1) {
-                        history.back();
-                    } else {
-                        window.location.href = '/';
-                    }
+            const backButton = document.getElementById('backButton');
+            if (backButton) {
+                backButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.history.back();
                 });
             }
             const topLink = document.getElementById('topLink');
@@ -1105,4 +1096,3 @@ if (backButton) {
     </script>
 </body>
 </html>
-```
